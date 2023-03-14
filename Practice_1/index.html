@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>SQA Sample Project</title>
+	<style>
+
+		body {
+			background-color: #FFFFC2;
+		}
+		
+		table, th, td {
+		  border:1px solid black;
+		  border-collapse: collapse;
+		}
+		
+		input[type="text"], input[type="email"], input[type="password"], input[type="date"], textarea, select {
+			width:95%;
+		}
+
+		input[type="text"], input[type="email"], input[type="password"], select {
+			height:30px;
+		}
+
+		label {
+			font-size: large;
+			font-weight: 600;
+		}
+	
+	</style>
+</head>
+<body>
+	<center>
+		<b><u><h3>STUDENT REGISTRATION FORM</h3></u></b>
+	</center>
+	<form>
+		<table border="0" align="center" style="width:40%" cellpadding = "7">
+			<tr>
+				<td><label>First Name : </label></td>
+				<td><input type="text" name="f_name" placeholder="First Name"></td>
+			</tr>
+			<tr>
+				<td><label>Last Name : </label></td>
+				<td><input type="text" name="l_name" placeholder="Last Name"></td>
+			</tr>
+			<tr>
+				<td><label>Date of Birth : </label></td>
+				<td><input type="date" name="dob" ></td>
+			</tr>
+			<tr>
+				<td><label>Email : </label></td>
+				<td><input type="email" id="email" placeholder="example@gmail.com"></td>
+			</tr>
+			<tr>
+				<td><label>Phone No : </label></td>
+				<td><input type="text" name="phnno" placeholder="0771234567"></td>
+			</tr>
+			<tr>
+				<td><label>Address : </label></td>
+				<td><textarea id="adrs" rows="4"  placeholder="Place Your Home Address"></textarea></td>
+			</tr>
+			<tr>
+				<td><label>Gender : </label></td>
+				<td>
+					<input type="radio" name="gender" value="male" id="male"> Male
+					<input type="radio" name="gender" value="female" id="female"> Female
+					<input type="radio" name="gender" value="other" id="other"> Other
+				</td>
+			</tr>
+			<tr>
+				<td><label>Hobbies : </label></td>
+				<td>
+					Drawing
+					<input type="checkbox" name="hobby_1" value="Drawing">
+					Singing
+					<input type="checkbox" name="hobby_2" value="Singing">
+					Dancing
+					<input type="checkbox" name="hobby_3" value="Dancing">
+					Sketching
+					<input type="checkbox" name="hobby_4" value="Cooking">
+				</td>
+			</tr>
+			<tr>
+				<td><label>Course : </label></td>
+				<td>
+					<select name="" id="">
+						<option value="">Course</option>  
+						<option class="cs1" value="BCA">BCA</option>  
+						<option class="cs2" value="BBA">BBA</option>  
+						<option class="cs3" value="B.Tech">B.Tech</option>  
+						<option class="cs4" value="MBA">MBA</option>  
+						<option class="cs5" value="MCA">MCA</option>  
+						<option class="cs6" value="M.Tech">M.Tech</option>  
+					</select>
+				</td>
+			</tr>
+			<tr>
+				<td><label>Password : </label></td>
+				<td><input type="password" name="pswd" placeholder="password"></td>
+			</tr>
+			<tr>
+				<td><label>Retype Password : </label></td>
+				<td><input type="password" id="rpswd" placeholder="retype your above password"></td>
+			</tr>
+			<tr>
+				<td><label>Qualification : </label></td>
+				<td>
+					<table>
+						<thead>
+							<tr>
+								<th>Examination</th>
+								<th>Results</th>
+								<th>Z-score</th>
+								<th>District Rank</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td align="center">A/L</td>
+								<td><input type="text" name="result" style="text-align: center;"></td>
+								<td><input type="text" name="z_score" style="text-align: center;"></td>
+								<td><input type="text" name="d_rank" style="text-align: center;"></td>
+							</tr>
+						</tbody>
+					</table>
+				</td>
+			</tr>
+			
+		</table>
+	</form>
+</body>
+</html>
